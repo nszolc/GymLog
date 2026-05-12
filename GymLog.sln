@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymLog.Domain", "src\GymLog.Domain\GymLog.Domain.csproj", "{D013CC8F-CFBC-484A-868C-917232804661}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymLog.Application", "src\GymLog.Application\GymLog.Application.csproj", "{D34F9AC3-F3DA-4C61-B947-6B501E8601DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymLog.Infrastructure", "src\GymLog.Infrastructure\GymLog.Infrastructure.csproj", "{41663B10-DE84-4659-A3E8-50977E90684A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymLog.API", "src\GymLog.API\GymLog.API.csproj", "{E9A33BEF-E877-4FFF-849A-32CD308F9E7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D013CC8F-CFBC-484A-868C-917232804661}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D013CC8F-CFBC-484A-868C-917232804661}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D013CC8F-CFBC-484A-868C-917232804661}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D013CC8F-CFBC-484A-868C-917232804661}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D34F9AC3-F3DA-4C61-B947-6B501E8601DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D34F9AC3-F3DA-4C61-B947-6B501E8601DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D34F9AC3-F3DA-4C61-B947-6B501E8601DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D34F9AC3-F3DA-4C61-B947-6B501E8601DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41663B10-DE84-4659-A3E8-50977E90684A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41663B10-DE84-4659-A3E8-50977E90684A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41663B10-DE84-4659-A3E8-50977E90684A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41663B10-DE84-4659-A3E8-50977E90684A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9A33BEF-E877-4FFF-849A-32CD308F9E7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9A33BEF-E877-4FFF-849A-32CD308F9E7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9A33BEF-E877-4FFF-849A-32CD308F9E7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9A33BEF-E877-4FFF-849A-32CD308F9E7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
