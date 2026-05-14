@@ -1,0 +1,21 @@
+services:
+  gymlog-db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: gymlog-db
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=YourStrong!Passw0rd
+      - MSSQL_PID=Developer
+    ports:
+      - "1434:1433"
+    volumes:
+      - gymlog-db-data:/var/opt/mssql
+    networks:
+      - gymlog-network
+
+volumes:
+  gymlog-db-data:
+
+networks:
+  gymlog-network:
+    driver: bridge

@@ -1,5 +1,55 @@
-bin/
-obj/
-/packages/
-riderModule.iml
-/_ReSharper.Caches/
+# ----- .NET -----
+**/bin/
+**/obj/
+**/out/
+
+# ----- NuGet -----
+*.nupkg
+**/packages/*
+!**/packages/build/
+*.nuget.props
+*.nuget.targets
+
+# ----- ASP.NET -----
+**/wwwroot/lib/
+
+# ----- User-specific / IDE -----
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# Rider / IntelliJ
+.idea/
+*.iml
+**/_ReSharper.Caches/
+
+# Visual Studio
+.vs/
+
+# Visual Studio Code
+.vscode/
+
+# ----- Build results -----
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+
+# ----- Test results -----
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# ----- Logs -----
+*.log
+*.tlog
+
+# ----- OS -----
+.DS_Store
+Thumbs.db
+desktop.ini
