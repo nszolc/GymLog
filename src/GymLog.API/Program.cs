@@ -1,5 +1,7 @@
 using GymLog.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
+using FluentValidation;
+using GymLog.Application.Validators.Exercises;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddValidatorsFromAssemblyContaining<CreateExerciseDtoValidator>();
 
 builder.Services.AddDbContext<GymLogDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
