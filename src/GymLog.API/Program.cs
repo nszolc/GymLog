@@ -2,6 +2,7 @@ using GymLog.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using FluentValidation;
 using GymLog.Application.Validators.Exercises;
+using GymLog.API.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +16,9 @@ builder.Services.AddDbContext<GymLogDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
+
+// Middleware
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
